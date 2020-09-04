@@ -1,0 +1,33 @@
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+.nav-item{
+    margin: 0 10px;
+}
+
+.nav-link{
+    font-weight: bold;
+}
+.nav-link:hover{
+    color:#deb666 !important;
+    
+}
+
+.btn-primary{
+    color: #fff;
+    background-color: #deb666;
+    border-color: #deb666;
+    font-weight: bold;
+}
+
+.btn-primary:hover{
+    background-color: #b69854;
+    border-color: #b69854;
+}
+
+.btn-primary i{
+    padding: 6px 7px;
+    background-color: #967c40;
+    border-radius: 100%;
+}
