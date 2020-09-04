@@ -1,0 +1,24 @@
+.col-img-3d{
+    padding:50px;
+}
+
+.img-about-1{
+    z-index: 1;
+    margin-top: 67px;
+    box-shadow: 0 15px 75px 0 rgba(0, 0, 0, 0.15);
+}
+
+.img-about-2{
+    margin-left: -70px;
+    margin-top: -560px;
+    box-shadow: 0 15px 75px 0 rgba(0, 0, 0, 0.15);
+}
+
+.col-infor-intro p{
+    color:#858a99;
+}
+
+.subtitle-intro{
+    margin-bottom: 50px;
+}
+

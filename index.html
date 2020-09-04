@@ -12,12 +12,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/menu.css">
     <link rel="stylesheet" href="./css/booking.css">
+    <link rel="stylesheet" href="./css/introduction.css">
     <title>Hotel Zante</title>
   </head>
   <body>
 
-    <!--Menu-->
+    
       <div class="container">
+        <!--Menu-->
           <div class="row">
             <div class="col-5">
                <a class="navbar-brand" href="#">
@@ -55,24 +57,37 @@
                 </div>
               </nav>
           </div>
+          <!--Booking-->
+          <form action="#">
+            <div class="row booking">
+            <div class="col-md-4">
+              <input type="text" class="form-control" name="" id="" placeholder="Check In -> Check Out">
+            </div>
+            <div class="col-md-4">
+              <input type="text" class="form-control" name="" id="" placeholder="Guest 1">
+            </div>
+            <div class="col-md-4">
+              <button class="btn btn-primary btn-form-booking" class="form-control" type="submit">CHECK AVAILABILITY</button>
+            </div>
+          </div>
+          </form>
+          <!--introduction-->
+          <div class="row">
+            <div class="col-md-6 col-infor-intro">
+              <h2>HOTEL ZANTE SINCE 1992</h2>
+              <p class="subtitle-intro">High quality accommodation services</p>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+              <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.</p>
+            </div>
+            <div class="col-md-6 col-img-3d">
+              <img src="./images/about1.jpg" class="img-about-1" alt="image introduction">
+              <img src="./images/about2.jpg" class="img-about-2" alt="image introduction">
+            </div>
+          </div>
       </div>
       
-      <!--Booking-->
-      <form action="#">
-        <div class="container booking">
-        <div class="row">
-          <div class="col">
-            <input type="text" class="form-control" name="" id="" placeholder="Check In -> Check Out">
-          </div>
-          <div class="col">
-            <input type="text" class="form-control" name="" id="" placeholder="Guest 1">
-          </div>
-          <div class="col">
-            <button class="btn btn-primary btn-form-booking" class="form-control" type="submit">CHECK AVAILABILITY</button>
-          </div>
-        </div>
-      </div>
-      </form>
+
+    
       
      
     <!-- Optional JavaScript -->
