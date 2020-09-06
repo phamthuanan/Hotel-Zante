@@ -1,0 +1,31 @@
+.title-new-event{
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+.title-new-event p{
+    font-size: 14px;
+}
+
+.img-new-event{
+    width: 100%;
+    border-radius: 5px;
+    
+}
+
+.overlay-new-event{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(30deg, rgba(243,251,252,0) 0%, rgba(132,235,243,0.37298669467787116) 58%, rgba(228,33,33,0.258140756302521) 100%, rgba(242,4,4,0.5214460784313726) 100%);
+}
+
+.new-event{
+    position: relative;
+    transition: all 0.3s;
+}
+
+.new-event-blog:hover .new-event{
+    transform: scale(1.03);
+}
