@@ -1,0 +1,78 @@
+header{
+    position: relative;
+}
+.slider-control-header{
+    flex-direction: column;
+    left: auto;
+    bottom: auto;
+    top: 45%;
+    right: 2%;
+}
+
+.slider-control-header i{
+    cursor: pointer;
+    padding: 5px 0;
+    color: #a99c9ce8;
+}
+
+.slider-control-header i:hover{
+    color:white;
+}
+
+.slider-control-header i.active{
+    color:white;
+}
+
+#carouselExampleCaptions{
+    position: relative;
+}
+
+.carousel-caption{
+    bottom: 40%;
+}
+
+.carousel-caption .title-slider{
+    font-size: 64px;
+    font-weight: bold;
+}
+
+.container-menu{
+    position: absolute;
+    width: 100%;
+    top: 7%;
+    z-index: 2;
+}
+
+.container-booking{
+    position: absolute;
+    width: 100%;
+    bottom: 20%;
+    z-index: 2;
+}
+
+.overlay-header{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(3, 9, 88, 0.294);
+    top: 0;
+}
+
+
+
+.introduction, .favorate-room, .awesome-service, .gallery,.container-news-events,.container-rating{
+    width: 100%;
+}
+
+.line-intro{
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.favorate-room, .awesome-service, .gallery,.container-news-events,.container-rating{
+    padding: 90px 0;
+}
+
+.awesome-service,.container-news-events{
+    background-color: rgb(132 132 140 / 8%);
+}

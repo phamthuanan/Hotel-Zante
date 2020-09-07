@@ -20,206 +20,274 @@
     <link rel="stylesheet" href="./css/rating.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/cart-back_to_top.css">
+    <link rel="stylesheet" href="./css/layout.css">
     <title>Hotel Zante</title>
   </head>
   <body>
 
-    <div class="componet-body">
-      <div class="container">
-        <!--Menu-->
-          <div class="row">
-            <div class="col-5">
-               <a class="navbar-brand" href="#">
-              <img src="./images/logo-white.svg" alt="images-logo">
-              </a>
-            </div>
-            <nav class="navbar navbar-expand-lg navbar-light col-7">
-              <a class="navbar-brand" href="#"></a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                  <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle dropdown-hover" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          ROOMS
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="#">Room list</a>
-                          <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="#">Room Details</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">BLOGS</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link " href="#">CONTACT US</a>
-                    </li>
-                    <button class="btn btn-primary" type="submit"> <i class="far fa-calendar-alt"></i> BOOK ONLINE</button>
-                  </ul>
+    <div class="swapper">
+      <!--header-->
+      <header>
+        <!--slider-->
+        <div class="slider">
+          <div id="carouselExampleCaptions" class="carousel slide " data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/full-slider-1.jpg" class="d-block w-100" alt="img-slider">
+                <div class="carousel-caption d-none d-md-block">
+                  <p class="title-slider">MODERN & SPACIOUS ROOMS</p>
+                  <p>Enjoy your holidays at Hotel Zante</p>
                 </div>
-              </nav>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/full-slider-2.jpg" class="d-block w-100" alt="images-slider">
+                <div class="carousel-caption d-none d-md-block">
+                  <p class="title-slider">LUXURY EXPERIENCE</p>
+                  <p>Live Your Myth In Greece </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/full-slider-3.jpg" class="d-block w-100" alt="images-slider">
+                <div class="carousel-caption d-none d-md-block">
+                  <p class="title-slider">BOOK YOUR ROOMS NOW</p>
+                  <p>Family Rooms From $69 per night</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-indicators slider-control-header">
+              <i class="fas fa-circle active" data-target="#carouselExampleCaptions" data-slide-to="0"></i>
+              <i class="fas fa-circle" data-target="#carouselExampleCaptions" data-slide-to="1"></i>
+              <i class="fas fa-circle" data-target="#carouselExampleCaptions" data-slide-to="2"></i>
+            </div>
+             <!--Menu-->
+          <div class="container-menu">
+            <div class="container">
+              <div class="row">
+                <div class="col-5">
+                   <a class="navbar-brand" href="#">
+                  <img src="./images/logo-white.svg" alt="images-logo">
+                  </a>
+                </div>
+                <nav class="navbar navbar-expand-lg navbar-light col-7">
+                  <a class="navbar-brand" href="#"></a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                      <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle dropdown-hover" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              ROOMS
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="#">Room list</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Room Details</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">BLOGS</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link " href="#">CONTACT US</a>
+                        </li>
+                        <button class="btn btn-primary" type="submit"> <i class="far fa-calendar-alt"></i> BOOK ONLINE</button>
+                      </ul>
+                    </div>
+                  </nav>
+              </div>
+            </div>
           </div>
+  
           <!--Booking-->
-          <form action="#">
-            <div class="row booking">
-            <div class="col-md-4">
-              <input type="text" class="form-control" name="" id="" placeholder="Check In -> Check Out">
-            </div>
-            <div class="col-md-4">
-              <input type="text" class="form-control" name="" id="" placeholder="Guest 1">
-            </div>
-            <div class="col-md-4">
-              <button class="btn btn-primary btn-form-booking" class="form-control" type="submit">CHECK AVAILABILITY</button>
-            </div>
-          </div>
-          </form>
-          <!--introduction-->
-          <div class="row">
-            <div class="col-md-6 col-infor-intro">
-              <h2>HOTEL ZANTE SINCE 1992</h2>
-              <p class="subtitle-intro">High quality accommodation services</p>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-              <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.</p>
-            </div>
-            <div class="col-md-6 col-img-3d">
-              <img src="./images/about1.jpg" class="img-about-1" alt="image introduction">
-              <img src="./images/about2.jpg" class="img-about-2" alt="image introduction">
+          <div class="container-booking">
+            <div class="container">
+              <form action="#">
+                <div class="row booking">
+                  <div class="col-md-4">
+                    <input type="text" class="form-control" name="" id="" placeholder="Check In -> Check Out">
+                  </div>
+                  <div class="col-md-4">
+                    <input type="text" class="form-control" name="" id="" placeholder="Guest 1">
+                  </div>
+                  <div class="col-md-4">
+                    <button class="btn btn-primary btn-form-booking" class="form-control" type="submit">CHECK AVAILABILITY</button>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
+          </div>
+          <!--slider end-->
+        </div>
+        <div class="overlay-header"></div>
+      </header>
 
-          <!--Favorate rooms-->
-          <div class="row">
-            <div class="col-md-12 title-service">
-              <h2>OUR FAVORITE ROOMS</h2>
-              <p>Check out now our best rooms</p>
-            </div>
-            <div class="col-md-4">
-              <div class="card text-center">
-                <span class="badge badge-secondary">$89 / night</span>
-                <a href="#">
-                   <img src="./images/double-720x470.jpg" class="card-img-top" alt="img-rooms">
-                </a>
-                <div class="card-footer text-muted">
-                  Double Room
-                  <div class="icon-menu-room">
-                    <div data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Sauna Included" data-original-title="Sauna"><i class="fas fa-bath"></i></div>
-                    <div data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Breakfast Included" data-original-title="Breakfast"><i class="fas fa-utensils"></i></div>
-                    <div data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Coffee Maker Included" data-original-title="Coffee Maker"><i class="fas fa-coffee"></i></div>
-                    <div data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Widescreen TV Included" data-original-title="Widescreen TV"><i class="fas fa-tv"></i></div>
-                    <div data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Air Conditioner Included" data-original-title="Air Conditioner"><i class="far fa-snowflake"></i></div>
-                  </div>
-                </div>
+      <!--Main Body-->
+      <main>
+
+        <!--introduction-->
+        <div class="introduction">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-infor-intro">
+                <h2>HOTEL ZANTE SINCE 1992</h2>
+                <p class="subtitle-intro">High quality accommodation services</p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.</p>
               </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card text-center">
-                <span class="badge badge-secondary">$30 / night</span>
-                <a href="#">
-                   <img src="./images/single-720x470.jpg" class="card-img-top" alt="img-rooms">
-                </a>
-                <div class="card-footer text-muted">
-                  Single Room
-                  <div class="icon-menu-room">
-                    <div data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Wi-Fi Included" data-original-title="Wi-Fi"><i class="fas fa-wifi"></i></div>
-                    <div data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Private Balcony Included" data-original-title="Private Balcony"><i class="fas fa-eye-slash"></i></div>
-                    <div data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Sauna Included" data-original-title="Sauna"><i class="fas fa-bath"></i></div>
-                    <div data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Breakfast Included" data-original-title="Breakfast"><i class="fas fa-utensils"></i></div>
-                    <div data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Hair Dryer Included" data-original-title="Hair Dryer"><i class="fas fa-female"></i></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card text-center">
-                <span class="badge badge-secondary">$20 / night</span>
-                <a href="#">
-                   <img src="./images/1-1-720x470.jpg" class="card-img-top" alt="img-rooms">
-                </a>
-                <div class="card-footer text-muted">
-                  Deluxe Room
-                  <div class="icon-menu-room">
-                    <div data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Wi-Fi Included" data-original-title="Wi-Fi"><i class="fas fa-wifi"></i></div>
-                    <div data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Hair Dryer Included" data-original-title="Hair Dryer"><i class="fas fa-female"></i></div>
-                    <div data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Coffee Maker Included" data-original-title="Coffee Maker"><i class="fas fa-coffee"></i></div>
-                    <div data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Widescreen TV Included" data-original-title="Widescreen TV"><i class="fas fa-tv"></i></div>
-                    <div data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Air Conditioner Included" data-original-title="Air Conditioner"><i class="far fa-snowflake"></i></div>
-                  </div>
-                </div>
+              <div class="col-md-6 col-img-3d">
+                <img src="./images/about1.jpg" class="img-about-1" alt="image introduction">
+                <img src="./images/about2.jpg" class="img-about-2" alt="image introduction">
               </div>
             </div>
           </div>
-          
-          <!--Awesome Services-->
-          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <hr class="line-intro">
+        </div>
+       
+        <!--Favorate rooms-->
+
+        <div class="favorate-room">
+          <div class="container">
             <div class="row">
               <div class="col-md-12 title-service">
-                <h2>OUR AWESOME SERVICES</h2>
-                <p>Check out our awesome services</p>
+                <h2>OUR FAVORITE ROOMS</h2>
+                <p>Check out now our best rooms</p>
               </div>
-              <div class="col-7">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="./images/restaurant.jpg" class="d-block w-100" alt="images-retaurant">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./images/spa.jpg" class="d-block w-100" alt="images-spa">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./images/conference.jpg" class="d-block w-100" alt="images-conference">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./images/swimming.jpg" class="d-block w-100" alt="images-swimming">
+              <div class="col-md-4">
+                <div class="card text-center">
+                  <span class="badge badge-secondary">$89 / night</span>
+                  <a href="#">
+                     <img src="./images/double-720x470.jpg" class="card-img-top" alt="img-rooms">
+                  </a>
+                  <div class="card-footer text-muted">
+                    Double Room
+                    <div class="icon-menu-room">
+                      <div data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Sauna Included" data-original-title="Sauna"><i class="fas fa-bath"></i></div>
+                      <div data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Breakfast Included" data-original-title="Breakfast"><i class="fas fa-utensils"></i></div>
+                      <div data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Coffee Maker Included" data-original-title="Coffee Maker"><i class="fas fa-coffee"></i></div>
+                      <div data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Widescreen TV Included" data-original-title="Widescreen TV"><i class="fas fa-tv"></i></div>
+                      <div data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Air Conditioner Included" data-original-title="Air Conditioner"><i class="far fa-snowflake"></i></div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="col-md-5">
-                <div class="carousel-indicators">
-                  <div class="media active control-size" data-target="#carouselExampleIndicators" data-slide-to="0">
-                    <a href="" class="control-slide-service">
-                      <img src="./images/plate.png" class="align-self-center mr-3" alt="icon-plate">
-                      <div class="media-body">
-                        <h5 class="mt-0">Restaurant</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="media control-size" data-target="#carouselExampleIndicators" data-slide-to="1">
-                    <a href="" class="control-slide-service">
-                      <img src="./images/spa.png" class="align-self-center mr-3" alt="icon-spa">
-                      <div class="media-body">
-                        <h5 class="mt-0">Spa - Beauty & Health</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="media control-size" data-target="#carouselExampleIndicators" data-slide-to="2">
-                    <a href="" class="control-slide-service">
-                      <img src="./images/conference.png" class="align-self-center mr-3" alt="icon-conferance-room">
-                      <div class="media-body">
-                        <h5 class="mt-0">Conference Room</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="media" data-target="#carouselExampleIndicators" data-slide-to="3">
-                    <a href="" class="control-slide-service">
-                      <img src="./images/swimmer.png" class="align-self-center mr-3" alt="icon-swimming">
-                      <div class="media-body">
-                        <h5 class="mt-0">Swimming Pool</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
-                      </div>
-                    </a>
+              <div class="col-md-4">
+                <div class="card text-center">
+                  <span class="badge badge-secondary">$30 / night</span>
+                  <a href="#">
+                     <img src="./images/single-720x470.jpg" class="card-img-top" alt="img-rooms">
+                  </a>
+                  <div class="card-footer text-muted">
+                    Single Room
+                    <div class="icon-menu-room">
+                      <div data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Wi-Fi Included" data-original-title="Wi-Fi"><i class="fas fa-wifi"></i></div>
+                      <div data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Private Balcony Included" data-original-title="Private Balcony"><i class="fas fa-eye-slash"></i></div>
+                      <div data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Sauna Included" data-original-title="Sauna"><i class="fas fa-bath"></i></div>
+                      <div data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Breakfast Included" data-original-title="Breakfast"><i class="fas fa-utensils"></i></div>
+                      <div data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Hair Dryer Included" data-original-title="Hair Dryer"><i class="fas fa-female"></i></div>
+                    </div>
                   </div>
                 </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card text-center">
+                  <span class="badge badge-secondary">$20 / night</span>
+                  <a href="#">
+                     <img src="./images/1-1-720x470.jpg" class="card-img-top" alt="img-rooms">
+                  </a>
+                  <div class="card-footer text-muted">
+                    Deluxe Room
+                    <div class="icon-menu-room">
+                      <div data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Wi-Fi Included" data-original-title="Wi-Fi"><i class="fas fa-wifi"></i></div>
+                      <div data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Hair Dryer Included" data-original-title="Hair Dryer"><i class="fas fa-female"></i></div>
+                      <div data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Coffee Maker Included" data-original-title="Coffee Maker"><i class="fas fa-coffee"></i></div>
+                      <div data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Widescreen TV Included" data-original-title="Widescreen TV"><i class="fas fa-tv"></i></div>
+                      <div data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Air Conditioner Included" data-original-title="Air Conditioner"><i class="far fa-snowflake"></i></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-
-          <!--Gallery-->
+        </div>
+        
+        <!--Awesome Services-->
+        <div class="awesome-service">
+          <div class="container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <div class="row">
+                <div class="col-md-12 title-service">
+                  <h2>OUR AWESOME SERVICES</h2>
+                  <p>Check out our awesome services</p>
+                </div>
+                <div class="col-7">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./images/restaurant.jpg" class="d-block w-100" alt="images-retaurant">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/spa.jpg" class="d-block w-100" alt="images-spa">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/conference.jpg" class="d-block w-100" alt="images-conference">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/swimming.jpg" class="d-block w-100" alt="images-swimming">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <div class="carousel-indicators cotrol-slide-awesome">
+                    <div class="media active control-size" data-target="#carouselExampleIndicators" data-slide-to="0">
+                      <a href="" class="control-slide-service">
+                        <img src="./images/plate.png" class="align-self-center mr-3" alt="icon-plate">
+                        <div class="media-body">
+                          <h5 class="mt-0">Restaurant</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="media control-size" data-target="#carouselExampleIndicators" data-slide-to="1">
+                      <a href="" class="control-slide-service">
+                        <img src="./images/spa.png" class="align-self-center mr-3" alt="icon-spa">
+                        <div class="media-body">
+                          <h5 class="mt-0">Spa - Beauty & Health</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="media control-size" data-target="#carouselExampleIndicators" data-slide-to="2">
+                      <a href="" class="control-slide-service">
+                        <img src="./images/conference.png" class="align-self-center mr-3" alt="icon-conferance-room">
+                        <div class="media-body">
+                          <h5 class="mt-0">Conference Room</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="media" data-target="#carouselExampleIndicators" data-slide-to="3">
+                      <a href="" class="control-slide-service">
+                        <img src="./images/swimmer.png" class="align-self-center mr-3" alt="icon-swimming">
+                        <div class="media-body">
+                          <h5 class="mt-0">Swimming Pool</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!--Gallery-->
+      <div class="gallery">
+        <div class="container">
           <div class="row">
             <div class="col-md-12 title-service">
               <h2>ZANTE GALLERY</h2>
@@ -274,8 +342,12 @@
               </div>
             </div>
           </div>
-
-          <!--News-events-->
+        </div>
+      </div>
+      
+      <!--News-events-->
+      <div class="container-news-events">
+        <div class="container">
           <div class="row">
             <div class="col-md-12 title-service">
               <h2>LATEST NEWS & EVENTS</h2>
@@ -312,8 +384,12 @@
               </div>
             </div>
           </div>
-
-          <!--Rating Comment-->
+        </div>
+      </div>
+      
+      <!--Rating Comment-->
+      <div class="container-rating">
+        <div class="container">
           <div class="row">
             <div class="col-md-12 title-service">
               <h2>OUR GUESTS LOVE US</h2>
@@ -344,103 +420,108 @@
               </div>
               <div class="avatar-cmt">
                 <div class="media">
-                  <img src="./images/user2.jpg" class="mr-3 rounded-circle" alt="avatar-user">
-                  <div class="media-body">
+                   <img src="./images/user2.jpg" class="mr-3 rounded-circle" alt="avatar-user">
+                    <div class="media-body">
                     <h5 class="mt-0">Felecia Lawson</h5>
                     Paris, France
-                  </div>
+                   </div>
+                 </div>
+               </div>
+              </div>
+              <div class="col-md-4 rating-cmt">
+                <div class="infor-cmt">
+                  <h5>Great Place</h5>
+                 <div class="icon-rating-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                  <p>Wonderful location, clean and comfy suite, rich homemade breakfast, friendly and helpful staff!!! I propose it unreservedly</p>
                 </div>
-              </div>
-            </div>
-            <div class="col-md-4 rating-cmt">
-              <div class="infor-cmt">
-                <h5>Great Place</h5>
-                <div class="icon-rating-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                <p>Wonderful location, clean and comfy suite, rich homemade breakfast, friendly and helpful staff!!! I propose it unreservedly</p>
-              </div>
-              <div class="avatar-cmt">
-                <div class="media">
-                  <img src="./images/admin.jpg" class="mr-3 rounded-circle" alt="avatar-user">
-                  <div class="media-body">
+                <div class="avatar-cmt">
+                  <div class="media">
+                    <img src="./images/admin.jpg" class="mr-3 rounded-circle" alt="avatar-user">
+                    <div class="media-body">
                     <h5 class="mt-0">Emily Hill</h5>
                     Rome, Italy
-                  </div>
+                    </div>
+                 </div>
                 </div>
               </div>
             </div>
-          </div>
-      </div>
-    </div>
-      
-      
-      <footer>
-        <div class="footer-page">
-          <div class="container">
-          <div class="row footer-infor">
-            <div class="col-md-3 infor-intro">
-              <img src="./images/logo_footer-2.png" alt="images-logo">
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-            </div>
-            <div class="col-md-3">
-              <h5>LATEST NEWS</h5>
-              <ul class="lastest-news">
-                <li><a href="#">Hotel Zante in pictures</a></li>
-                <li><a href="#">10 Things You Should Know</a></li>
-                <li><a href="#">Hotel Zante Weddings</a></li>
-                <li><a href="#">Hotel Zante family party</a></li>
-                <li><a href="#">Live your myth in Greece</a></li>
-              </ul>
-            </div>
-            <div class="col-md-3">
-              <h5>USEFUL LINKS</h5>
-              <ul class="lastest-news">
-                <li><a href="#"><i class="fas fa-angle-right"></i> Location</a></li>
-                <li><a href="#"><i class="fas fa-angle-right"></i> Gallery</a></li>
-                <li><a href="#"><i class="fas fa-angle-right"></i> Contact Us</a></li>
-                <li><a href="#"><i class="fas fa-angle-right"></i> About Us</a></li>
-                <li><a href="#"><i class="fas fa-angle-right"></i> My Boookings</a></li>
-              </ul>
-            </div>
-            <div class="col-md-3">
-              <h5>USEFUL LINKS</h5>
-              <ul class="lastest-news">
-                <li><a href="#"><i class="fas fa-map-marker-alt"></i> 25, Navagio Zakynthos, Greece</a></li>
-                <li><a href="#"><i class="fas fa-phone-alt"></i> Phone: 123-12345678</a></li>
-                <li><a href="#"><i class="fas fa-envelope"></i> Email: contact@hotelzante.com</a></li>
-              </ul>
-              <div class="icon-social-network">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-pinterest"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-tripadvisor"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="row copyright">
-            <div class="col-md-6 infor-copyright">
-              © 2020 Hotel Zante. Designed by 
-             <a href="#">Eagle-Themes</a> 
-            </div>
-            <div class="col-md-6 langages-infor">
-              <a href="#" class="ml-auto"><i class="fas fa-globe-americas"></i> English</a>
-            </div>
-          </div>
-          </div>
-          <hr class="line1">
-          <hr class="line2">
         </div>
+      </div>   
+</main>
       
-      </footer>
 
-      <div class="cart left">
-        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+    <!--Footer-->
+    <footer>
+      <div class="footer-page">
+        <div class="container">
+        <div class="row footer-infor">
+          <div class="col-md-3 infor-intro">
+            <img src="./images/logo_footer-2.png" alt="images-logo">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+          </div>
+          <div class="col-md-3">
+            <h5>LATEST NEWS</h5>
+            <ul class="lastest-news">
+              <li><a href="#">Hotel Zante in pictures</a></li>
+              <li><a href="#">10 Things You Should Know</a></li>
+              <li><a href="#">Hotel Zante Weddings</a></li>
+              <li><a href="#">Hotel Zante family party</a></li>
+              <li><a href="#">Live your myth in Greece</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>USEFUL LINKS</h5>
+            <ul class="lastest-news">
+              <li><a href="#"><i class="fas fa-angle-right"></i> Location</a></li>
+              <li><a href="#"><i class="fas fa-angle-right"></i> Gallery</a></li>
+              <li><a href="#"><i class="fas fa-angle-right"></i> Contact Us</a></li>
+              <li><a href="#"><i class="fas fa-angle-right"></i> About Us</a></li>
+              <li><a href="#"><i class="fas fa-angle-right"></i> My Boookings</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>USEFUL LINKS</h5>
+            <ul class="lastest-news">
+              <li><a href="#"><i class="fas fa-map-marker-alt"></i> 25, Navagio Zakynthos, Greece</a></li>
+              <li><a href="#"><i class="fas fa-phone-alt"></i> Phone: 123-12345678</a></li>
+              <li><a href="#"><i class="fas fa-envelope"></i> Email: contact@hotelzante.com</a></li>
+            </ul>
+            <div class="icon-social-network">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-pinterest"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-tripadvisor"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="row copyright">
+          <div class="col-md-6 infor-copyright">
+            © 2020 Hotel Zante. Designed by 
+            <a href="#">Eagle-Themes</a> 
+          </div>
+          <div class="col-md-6 langages-infor">
+            <a href="#" class="ml-auto"><i class="fas fa-globe-americas"></i> English</a>
+          </div>
+        </div>
+        </div>
+        <hr class="line1">
+        <hr class="line2">
       </div>
+    </footer>
+  </div>
+  <div class="cart left">
+    <a href="#"><i class="fas fa-shopping-cart"></i></a>
+  </div>
 
-      <div class="back-to-top">
-        <a href="#"><i class="fas fa-angle-up"></i></a>
-      </div>
+  <div class="back-to-top">
+    <a href="#"><i class="fas fa-angle-up"></i></a>
+  </div>    
+      
+     
+
+      
     
       
      
